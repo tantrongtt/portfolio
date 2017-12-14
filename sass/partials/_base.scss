@@ -1,0 +1,18 @@
+body {
+    font-size: 1em;
+    line-height: 1.4;
+    font-family: $font-content;
+    font-weight: $font-weight-base;
+    // Modernizr fallback for when there is no fontface support
+    .no-fontface & {
+        font-size: 1.05em;
+    }
+}
+::-moz-selection {
+    background: $color1;
+    text-shadow: none;
+}
+::selection {
+    background: $color1;
+    text-shadow: none;
+}

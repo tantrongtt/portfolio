@@ -1,0 +1,477 @@
+/*! Taken from the book, 'Sass and Compass for designers' by Ben Frain */
+@import url("https://fonts.googleapis.com/css?family=Cinzel:400,700|Libre+Baskerville:400,400i,700");
+h1, h2, h3, h4, h5 {
+  font-family: "Cinzel", sans-serif;
+}
+
+h2 {
+  font-size: 38px;
+  line-height: 1.34;
+  text-align: center;
+  color: #111111;
+}
+
+.sub-title {
+  font-family: "Libre Baskerville", sans-serif;
+  font-size: 14px;
+  text-align: center;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block;
+}
+
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden] {
+  display: none;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+html,
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  -webkit-transition: all 0.35s ease;
+  -moz-transition: all 0.35s ease;
+  -ms-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+a:focus {
+  outline: thin dotted;
+}
+a:hover, a:active {
+  outline: 0;
+}
+
+h1 {
+  font-size: 42px;
+  margin: 0.67em 0;
+  line-height: 1.34;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 40px;
+  line-height: 1.34;
+  font-weight: 300;
+}
+
+h3 {
+  font-size: 1.17em;
+  margin: 1em 0;
+}
+
+h4 {
+  font-size: 1em;
+  margin: 1.33em 0;
+}
+
+h5 {
+  font-size: 0.83em;
+  margin: 1.67em 0;
+}
+
+h6 {
+  font-size: 0.75em;
+  margin: 2.33em 0;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+dfn {
+  font-style: italic;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+pre,
+code,
+kbd,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+small {
+  font-size: 75%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+nav ul,
+nav ol {
+  list-style: none;
+  padding: 0;
+}
+
+img {
+  border: 0;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+figure {
+  margin: 0;
+}
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+  border: 0;
+  padding: 0;
+  white-space: normal;
+}
+
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+}
+
+button,
+input {
+  line-height: normal;
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+}
+
+button[disabled],
+input[disabled] {
+  cursor: default;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-size: 1em;
+  line-height: 1.4;
+  font-family: "Libre Baskerville", sans-serif;
+  font-weight: 300;
+}
+.no-fontface body {
+  font-size: 1.05em;
+}
+
+::-moz-selection {
+  background: #FF0000;
+  text-shadow: none;
+}
+
+::selection {
+  background: #FF0000;
+  text-shadow: none;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+header[role="banner"], footer[role="contentinfo"] {
+  width: 100%;
+  display: block;
+}
+
+nav[role="navigation"] {
+  width: 25%;
+  float: left;
+}
+
+.main-content {
+  width: 70%;
+  float: right;
+}
+
+footer[role="contentinfo"] {
+  clear: both;
+}
+
+@font-face {
+  font-family: 'Calluna';
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/callunasansregular-webfont.woff") format("woff");
+}
+.section-header {
+  height: 650px;
+}
+.section-header .container {
+  padding-top: 32px;
+}
+
+.intro {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 160px;
+}
+.intro .intro-name {
+  font-size: 32px;
+  font-family: "Cinzel", sans-serif;
+}
+
+.top-nav {
+  display: block;
+}
+.top-nav .logo {
+  width: 200px;
+  display: inline-block;
+}
+.top-nav .logo img {
+  width: 100%;
+  height: auto;
+}
+
+.menu-list {
+  float: right;
+  margin-top: 26px;
+}
+.menu-list .menu-item {
+  display: inline-block;
+  list-style: none;
+  padding-left: 40px;
+}
+
+.light {
+  font-weight: 400;
+}
+.light .item-link {
+  color: rgba(23, 23, 23, 0.5);
+  border-bottom: 0 solid #171717;
+}
+.light .item-link:hover {
+  color: #171717;
+  border-bottom: 3px solid #171717;
+}
+.light .item-link.active {
+  color: #171717;
+  border-bottom: 3px solid #171717;
+}
+
+.section-projects.dark {
+  background-color: #111111;
+}
+.section-projects.light {
+  background-color: #FAFAFA;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding-top: 56px;
+}
+
+#columns {
+  column-count: 2;
+  column-gap: 32px;
+  width: 90%;
+  width: 100%;
+  margin: auto;
+}
+
+.project-wrap {
+  margin: 0 0 32px;
+  padding: 56px 40px 32px 40px;
+  padding-bottom: 10px;
+  width: 100%;
+  display: inline-block;
+}
+.project-wrap img {
+  width: 100%;
+  height: auto;
+  padding-bottom: 15px;
+  margin-bottom: 5px;
+}
+
+.title-container {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.project-sub-title {
+  padding-bottom: 20px;
+  font-size: 14px;
+}
+
+.project-title {
+  margin-top: 8px;
+  margin-bottom: 16px;
+}
+
+.light.section-header {
+  background-color: #F2F2F2;
+}
+.light .intro-name {
+  color: #171717;
+}
+
+.section-projects.light .project-wrap {
+  background-color: #F6F6F6;
+  background-image: url("https://78.media.tumblr.com/5e495f5ed45112e2b934b44af16bd6db/tumblr_ozm0sa77nO1uxishno7_r1_500.png");
+}
+.section-projects.light .project-title {
+  color: #111111;
+}
+.section-projects.light .project-sub-title {
+  color: rgba(23, 23, 23, 0.7);
+}
+.section-projects.light .cta-see-more {
+  color: #171717;
+  text-decoration: none;
+}
+
+.cta-see-more {
+  display: block;
+  font-size: 14px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.dark.section-header {
+  background-color: #111111;
+}
+.dark .intro-name {
+  color: #F2F2F2;
+}
+.dark .intro-title {
+  color: #F2F2F2;
+}
+
+.section-projects.dark .project-wrap {
+  background-color: #171717;
+  background-image: url("https://78.media.tumblr.com/b04c03fa8a9f9f98adc2057b67b9a1f1/tumblr_ozm0sa77nO1uxishno1_1280.png");
+}
+.section-projects.dark .project-title {
+  color: #F2F2F2;
+}
+.section-projects.dark .project-sub-title {
+  color: rgba(242, 242, 242, 0.7);
+}
+.section-projects.dark .cta-see-more {
+  color: #F2F2F2;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 750px) {
+  #columns {
+    column-gap: 0px;
+    column-count: 1;
+  }
+
+  #columns figure {
+    width: 100%;
+  }
+}
