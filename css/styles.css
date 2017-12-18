@@ -4,17 +4,34 @@ h1, h2, h3, h4, h5 {
   font-family: "Cinzel", sans-serif;
 }
 
-h2 {
-  font-size: 38px;
-  line-height: 1.34;
-  text-align: center;
+h1, h2, h3, h4, h5, a, p, li {
   color: #111111;
+}
+
+h1 {
+  font-size: 56px !important;
+}
+
+h2 {
+  font-size: 38px !important;
+}
+
+h3 {
+  font-size: 20px !important;
+}
+
+h4 {
+  font-size: 18px !important;
 }
 
 .sub-title {
   font-family: "Libre Baskerville", sans-serif;
   font-size: 14px;
-  text-align: center;
+}
+
+p, li, a {
+  font-family: "Libre Baskerville", sans-serif;
+  line-height: 30px;
 }
 
 article,
@@ -261,6 +278,7 @@ body {
   line-height: 1.4;
   font-family: "Libre Baskerville", sans-serif;
   font-weight: 300;
+  overflow-x: hidden;
 }
 .no-fontface body {
   font-size: 1.05em;
@@ -282,7 +300,8 @@ body {
   box-sizing: border-box;
 }
 
-header[role="banner"], footer[role="contentinfo"] {
+header[role="banner"],
+footer[role="contentinfo"] {
   width: 100%;
   display: block;
 }
@@ -474,4 +493,39 @@ footer[role="contentinfo"] {
   #columns figure {
     width: 100%;
   }
+}
+.highlight {
+  text-align: center;
+}
+.highlight .project-brief,
+.highlight .section-brief {
+  font-size: 20px;
+}
+.highlight .project-sum {
+  font-family: "Cinzel", sans-serif;
+  font-size: 14px;
+  color: #1E1E1E;
+}
+
+.project-section .section-sum-title {
+  font-weight: 300;
+  margin-bottom: 0;
+}
+.project-section .section-title {
+  margin-top: 0;
+  font-weight: 700;
+}
+.project-section .detail-sections {
+  margin-top: 40px;
+}
+.project-section img {
+  width: 100%;
+}
+.project-section .container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.section-footer {
+  padding-bottom: 60px;
 }

@@ -1,0 +1,44 @@
+.highlight {
+	text-align: center;
+
+	.project-brief,
+	.section-brief, {
+		font-size: $font-size-xl;
+	}
+
+	.project-sum {
+		font-family: $font-title;
+		font-size: $font-size-s;
+		color: $gray-600;
+	}
+}
+
+.project-section {
+	.section-sum-title {
+		font-weight: $font-weight-base;
+		margin-bottom: 0;
+	}
+
+	.section-title {
+		margin-top: 0;
+		font-weight: $font-weight-bold;
+	}
+
+	.detail-sections {
+		margin-top: 40px;
+	}
+
+	img {
+		width: 100%;
+	}
+
+	.container-fluid {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+}
+
+.section-footer {
+	padding-bottom: 60px;
+}
