@@ -13,14 +13,23 @@ footer[role="contentinfo"] {
 	width: 100%;
 	display: block;
 }
-nav[role="navigation"] {
-	width: 25%;
-	float: left;
-}
-.main-content {
-	width: 70%;
-	float: right;
-}
+
 footer[role="contentinfo"] {
 	clear: both;
+}
+
+.container {
+	padding-top: 56px;
+	@media (min-width: $min-sm) {
+		max-width: 540px;
+	}
+	@media (min-width: $min-md) {
+		max-width: 541px;
+	}
+	@media (min-width: $min-lg) {
+		max-width: 542px;;
+	}
+	@media (min-width: $min-xl) {
+		max-width: 720px;
+	}
 }

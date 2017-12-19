@@ -26,7 +26,11 @@
 	display: block;
 	.logo {
 		width: 200px;
-		display: inline-block;
+		display: block;
+		margin: auto;
+		@media (min-width: $min-sm) {
+			float: left;
+		}
 		img {
 			width: 100%;
 			height: auto;
@@ -35,13 +39,20 @@
 }
 
 .menu-list {
-	float: right;
-	margin-top: 26px;
+	margin-top: 0;
+	text-align: center;
+
+	@media (min-width: $min-sm) {
+		float: right;
+		margin-top: 26px;
+	}
 
 	.menu-item {
 		display: inline-block;
 		list-style: none;
-		padding-left: 40px;
+		&:not(:first-child) {
+			padding-left: 32px;
+		}
 	}
 }
 
@@ -61,6 +72,11 @@
 	}
 }
 
+.padding-remove {
+	padding-left: 0;
+	padding-right: 0;
+}
+
 .section-projects {
 	&.dark {
 		background-color: $black;
@@ -70,10 +86,10 @@
 	}
 }
 
-.container {
+.home-container {
 	max-width: 1200px;
 	margin: auto;
-	padding-top: 56px;
+	padding-top: 24px;
 }
 
 #columns {
@@ -185,3 +201,4 @@
 	#columns { column-gap: 0px; column-count: 1;}
 	#columns figure { width: 100%; }
 }
+

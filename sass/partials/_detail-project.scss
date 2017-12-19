@@ -1,3 +1,17 @@
+.virtuo-detail-header-section {
+	height: 865px;
+	background-color: $gray-100;
+	background-image: url("../img/virtuo-header.jpg");
+	background-size: cover;
+	background-position: center;
+	.header-text {
+		margin-top: 32px;
+		@media (min-width: $min-sm) {
+			margin-top: 80px;
+		}
+	}
+}
+
 .highlight {
 	text-align: center;
 
