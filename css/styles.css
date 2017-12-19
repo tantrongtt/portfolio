@@ -279,6 +279,8 @@ body {
   font-family: "Libre Baskerville", sans-serif;
   font-weight: 300;
   overflow-x: hidden;
+  word-wrap: break-word;
+  hyphens: auto;
 }
 .no-fontface body {
   font-size: 1.05em;
@@ -521,11 +523,10 @@ footer[role="contentinfo"] {
 .project-section img {
   width: 100%;
 }
-.project-section .container-fluid {
-  padding-left: 0;
-  padding-right: 0;
-}
 
 .section-footer {
   padding-bottom: 60px;
+}
+.section-footer a {
+  text-decoration: underline;
 }
