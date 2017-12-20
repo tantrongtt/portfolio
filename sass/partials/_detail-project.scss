@@ -10,7 +10,14 @@
 
 	&.leflair {
 		background-image: url("../img/leflair-header.jpg");
+	}
 
+	&.timecloud {
+		background-image: url("../img/timecloud-header.jpg");
+	}
+
+	&.leflair,
+	&.timecloud {
 		.highlight {
 			padding-top: 170px;
 		}
@@ -30,7 +37,9 @@
 }
 
 .highlight {
-	text-align: center;
+	&.center {
+		text-align: center;
+	}
 
 	.project-brief,
 	.section-brief, {
@@ -72,6 +81,32 @@
 	}
 }
 
-.leflair {
+.ground-gray {
 	background-color: $gray-400;
+}
+
+.ground-gray {
+	background-color: $gray-400;
+
+	&.timecloud {
+		margin-top: 60px;
+	}
+}
+
+.quote {
+	margin-top: 20px;
+	margin-bottom: 40px;
+
+	p {
+		color: $purple;
+	}
+
+	.quote-content {
+		font-size: 32px;
+	    @media (min-width: $min-sm) {
+	        font-size: $font-size-xxl;
+	    }
+		line-height: 47px;
+		margin: 0;
+	}
 }

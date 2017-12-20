@@ -2366,7 +2366,10 @@ footer[role="contentinfo"] {
 .detail-header-section.leflair {
   background-image: url("../img/leflair-header.jpg");
 }
-.detail-header-section.leflair .highlight {
+.detail-header-section.timecloud {
+  background-image: url("../img/timecloud-header.jpg");
+}
+.detail-header-section.leflair .highlight, .detail-header-section.timecloud .highlight {
   padding-top: 170px;
 }
 .detail-header-section .header-text {
@@ -2383,7 +2386,7 @@ footer[role="contentinfo"] {
   padding-bottom: 60px;
 }
 
-.highlight {
+.highlight.center {
   text-align: center;
 }
 .highlight .project-brief,
@@ -2418,6 +2421,31 @@ footer[role="contentinfo"] {
   text-decoration: underline;
 }
 
-.leflair {
+.ground-gray {
   background-color: #F7F7F7;
+}
+
+.ground-gray {
+  background-color: #F7F7F7;
+}
+.ground-gray.timecloud {
+  margin-top: 60px;
+}
+
+.quote {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.quote p {
+  color: #377FFF;
+}
+.quote .quote-content {
+  font-size: 32px;
+  line-height: 47px;
+  margin: 0;
+}
+@media (min-width: 576px) {
+  .quote .quote-content {
+    font-size: 38px;
+  }
 }
