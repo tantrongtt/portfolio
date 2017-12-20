@@ -1,15 +1,32 @@
-.virtuo-detail-header-section {
+.detail-header-section {
 	height: 865px;
 	background-color: $gray-100;
-	background-image: url("../img/virtuo-header.jpg");
 	background-size: cover;
 	background-position: center;
+
+	&.virtuo {
+		background-image: url("../img/virtuo-header.jpg");
+	}
+
+	&.leflair {
+		background-image: url("../img/leflair-header.jpg");
+
+		.highlight {
+			padding-top: 170px;
+		}
+	}
+
 	.header-text {
 		margin-top: 32px;
 		@media (min-width: $min-sm) {
 			margin-top: 80px;
 		}
 	}
+}
+
+.about-project {
+	padding-top: 60px;
+	padding-bottom: 60px;
 }
 
 .highlight {
@@ -53,4 +70,8 @@
 	a {
 		text-decoration: underline;
 	}
+}
+
+.leflair {
+	background-color: $gray-400;
 }
