@@ -5,15 +5,15 @@
 	background-position: center;
 
 	&.virtuo {
-		background-image: url("../img/virtuo-header.jpg");
+		background-image: url("../img/virtuo/virtuo-header.jpg");
 	}
 
 	&.leflair {
-		background-image: url("../img/leflair-header.jpg");
+		background-image: url("../img/leflair/leflair-header.jpg");
 	}
 
 	&.timecloud {
-		background-image: url("../img/timecloud-header.jpg");
+		background-image: url("../img/timecloud/timecloud-header.jpg");
 	}
 
 	&.leflair,
@@ -66,6 +66,10 @@
 
 	.detail-sections {
 		margin-top: 40px;
+
+		.container {
+			padding-top: 0;
+		}
 	}
 
 	img {
@@ -83,13 +87,10 @@
 
 .ground-gray {
 	background-color: $gray-400;
-}
-
-.ground-gray {
-	background-color: $gray-400;
 
 	&.timecloud {
 		margin-top: 60px;
+		padding-bottom: 80px;
 	}
 }
 
@@ -109,4 +110,8 @@
 		line-height: 47px;
 		margin: 0;
 	}
+}
+
+.free-space {
+	margin-bottom: 50px;
 }

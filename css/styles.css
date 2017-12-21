@@ -2361,13 +2361,13 @@ footer[role="contentinfo"] {
   background-position: center;
 }
 .detail-header-section.virtuo {
-  background-image: url("../img/virtuo-header.jpg");
+  background-image: url("../img/virtuo/virtuo-header.jpg");
 }
 .detail-header-section.leflair {
-  background-image: url("../img/leflair-header.jpg");
+  background-image: url("../img/leflair/leflair-header.jpg");
 }
 .detail-header-section.timecloud {
-  background-image: url("../img/timecloud-header.jpg");
+  background-image: url("../img/timecloud/timecloud-header.jpg");
 }
 .detail-header-section.leflair .highlight, .detail-header-section.timecloud .highlight {
   padding-top: 170px;
@@ -2410,6 +2410,9 @@ footer[role="contentinfo"] {
 .project-section .detail-sections {
   margin-top: 40px;
 }
+.project-section .detail-sections .container {
+  padding-top: 0;
+}
 .project-section img {
   width: 100%;
 }
@@ -2424,12 +2427,9 @@ footer[role="contentinfo"] {
 .ground-gray {
   background-color: #F7F7F7;
 }
-
-.ground-gray {
-  background-color: #F7F7F7;
-}
 .ground-gray.timecloud {
   margin-top: 60px;
+  padding-bottom: 80px;
 }
 
 .quote {
@@ -2448,4 +2448,8 @@ footer[role="contentinfo"] {
   .quote .quote-content {
     font-size: 38px;
   }
+}
+
+.free-space {
+  margin-bottom: 50px;
 }
