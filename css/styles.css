@@ -2166,7 +2166,12 @@ footer[role="contentinfo"] {
   src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/callunasansregular-webfont.woff") format("woff");
 }
 .section-header {
-  height: 650px;
+  height: 700px;
+}
+@media (min-width: 576px) {
+  .section-header {
+    height: 650px;
+  }
 }
 .section-header .container {
   padding-top: 32px;
@@ -2176,11 +2181,29 @@ footer[role="contentinfo"] {
   width: 80%;
   margin: auto;
   text-align: center;
-  padding-top: 160px;
+  padding-top: 50px;
+}
+@media (min-width: 576px) {
+  .intro {
+    padding-top: 160px;
+  }
 }
 .intro .intro-name {
-  font-size: 32px;
   font-family: "Cinzel", sans-serif;
+  font-size: 22px;
+}
+@media (min-width: 576px) {
+  .intro .intro-name {
+    font-size: 32px;
+  }
+}
+.intro .intro-title {
+  font-size: 40px !important;
+}
+@media (min-width: 576px) {
+  .intro .intro-title {
+    font-size: 48px;
+  }
 }
 
 .top-nav {
@@ -2216,7 +2239,7 @@ footer[role="contentinfo"] {
   list-style: none;
 }
 .menu-list .menu-item:not(:first-child) {
-  padding-left: 32px;
+  padding-left: 24px;
 }
 
 .light {
@@ -2259,6 +2282,7 @@ footer[role="contentinfo"] {
   width: 90%;
   width: 100%;
   margin: auto;
+  padding-top: 8px;
 }
 
 .project-wrap {
@@ -2452,4 +2476,50 @@ footer[role="contentinfo"] {
 
 .free-space {
   margin-bottom: 50px;
+}
+
+img {
+  width: 100%;
+}
+
+.project-full-width {
+  background-color: #A4E2F1;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  overflow: hidden;
+  position: relative;
+}
+
+.project-leflair {
+  background-image: none;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: 90vw auto;
+}
+@media (min-width: 576px) {
+  .project-leflair {
+    background-position: center bottom;
+    background-size: 750px auto;
+  }
+}
+
+.leflair-desktop-img {
+  margin-bottom: 16px;
+}
+@media (min-width: 576px) {
+  .leflair-desktop-img {
+    margin-bottom: -6px;
+  }
+}
+
+@media (max-width: 575px) {
+  .hidden-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 576px) {
+  .hidden-desktop {
+    display: none;
+  }
 }

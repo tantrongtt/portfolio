@@ -115,3 +115,49 @@
 .free-space {
 	margin-bottom: 50px;
 }
+
+img {
+	width: 100%;
+}
+
+.project-full-width {
+	background-color: #A4E2F1;
+	margin-top: 16px;
+	margin-bottom: 16px;
+	overflow: hidden;
+	position: relative;
+	// height: 590px;
+	// @media (min-width: $min-sm) {
+	// 	height: 720px;
+	// }
+}
+
+.project-leflair {
+	background-image: none;
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-size: 90vw auto;
+
+	@media (min-width: $min-sm) {
+		background-position: center bottom;
+		// background-image: url("../img/project-leflair.png");
+		background-size: 750px auto;
+	}
+}
+.leflair-desktop-img {
+	@media (min-width: $min-sm) {
+		margin-bottom: -6px;
+	}
+	margin-bottom: 16px;
+}
+
+.hidden-mobile {
+	@media (max-width: $max-sm) {
+		display: none;
+	}
+}
+.hidden-desktop {
+	@media (min-width: $min-sm) {
+		display: none;
+	}
+}

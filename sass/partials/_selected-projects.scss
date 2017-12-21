@@ -2,7 +2,10 @@
 	src:url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/callunasansregular-webfont.woff') format('woff');
 }
 .section-header {
-	height: 650px;
+	height: 700px;
+	@media (min-width: $min-sm) {
+		height: 650px;
+	}
 
 	.container {
 		padding-top: 32px;
@@ -14,11 +17,23 @@
 	width: 80%;
 	margin: auto;
 	text-align: center;
-	padding-top: 160px;
+	padding-top: 50px;
+	@media (min-width: $min-sm) {
+		padding-top: 160px;
+	}
 
 	.intro-name {
-		font-size: 32px;
 		font-family: $font-title;
+		font-size: 22px;
+		@media (min-width: $min-sm) {
+			font-size: 32px;
+		}
+	}
+	.intro-title {
+		font-size: 40px !important;
+		@media (min-width: $min-sm) {
+			font-size: 48px;
+		}
 	}
 }
 
@@ -51,7 +66,7 @@
 		display: inline-block;
 		list-style: none;
 		&:not(:first-child) {
-			padding-left: 32px;
+			padding-left: 24px;
 		}
 	}
 }
@@ -98,6 +113,7 @@
 	width: 90%;
 	width: 100%;
 	margin: auto;
+	padding-top: 8px;
 }
 
 .project-wrap {
