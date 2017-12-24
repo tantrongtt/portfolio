@@ -20,6 +20,9 @@
 	&.timecloud {
 		background-image: url("https://dl.dropboxusercontent.com/s/o9xlew3c2g85wh3/timecloud-hero.jpg");
 	}
+	&.ori {
+		background-image: url("https://dl.dropboxusercontent.com/s/ttoumxuj246lkby/ori-hero.jpg");
+	}
 
 	&.leflair,
 	&.timecloud {
@@ -67,6 +70,16 @@
 	.section-title {
 		margin-top: 0;
 		font-weight: $font-weight-bold;
+		&.white {
+			color: $white;
+		}
+	}
+	.description {
+		&.white {
+			p {
+				color: $white;
+			}
+		}
 	}
 
 	.detail-sections {
@@ -79,6 +92,10 @@
 
 	img {
 		width: 100%;
+	}
+
+	&.team {
+		padding-bottom: 40px;
 	}
 }
 
@@ -97,6 +114,11 @@
 		margin-top: 60px;
 		padding-bottom: 80px;
 	}
+}
+.ori-bg-backstory {
+	background-color: #282B4F;
+	margin-top: -130px;
+	padding-bottom: 64px;
 }
 
 .quote {
@@ -165,4 +187,8 @@ img {
 	@media (min-width: $min-sm) {
 		display: none;
 	}
+}
+
+.img-gallery-item {
+	padding-bottom: 30px;
 }

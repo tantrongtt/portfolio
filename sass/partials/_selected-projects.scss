@@ -83,7 +83,15 @@
 		}
 	}
 }
-
+.dark {
+	.item-link {
+		color: rgba($white, .5);
+		&.active {
+			color: $white;
+			border-bottom: 3px solid $white;
+		}
+	}
+}
 .padding-remove {
 	padding-left: 0;
 	padding-right: 0;

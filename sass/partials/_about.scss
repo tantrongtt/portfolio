@@ -1,0 +1,63 @@
+.section-header {
+    &.about-header {
+        background-image: url("https://dl.dropboxusercontent.com/s/9q1x6cloug2ybwf/pattern-curls.png");
+        background-position: center;
+        height: 604px;
+        @media (min-width: $min-sm) {
+            height: 584px;
+        }
+    }
+}
+
+.about-intro {
+    margin-top: 8px;
+    @media (min-width: $min-sm) {
+        margin-top: 80px;
+    }
+}
+
+.about-intro-title {
+    font-size: 84px !important;
+    line-height: 80px;
+    margin-top: 32px;
+    color: $white;
+    font-weight: bold;
+
+    @media (min-width: $min-sm) {
+        font-size: 102px !important;
+        line-height: 102px;
+    }
+}
+
+.about-content {
+    margin-top: -74px;
+    @media (min-width: $min-sm) {
+        margin-top: -130px;
+        margin-bottom: 80px;
+    }
+}
+
+.my-avatar {
+    img {
+        box-shadow: 0 22px 44px 0 rgba(0,0,0,0.22);
+    }
+    .social-links {
+        padding: 8px;
+        text-align: center;
+        @media (min-width: $min-sm) {
+            margin-top: 32px;
+        }
+        .social-item {
+            text-decoration: underline;
+            color: rgba($gray-600, .8);
+        }
+    }
+}
+
+.my-text {
+    padding-top: 16px;
+    @media (min-width: $min-sm) {
+        padding-left: 40px;
+        margin-top: 130px;
+    }
+}
