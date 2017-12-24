@@ -5,15 +5,20 @@
 	background-position: center;
 
 	&.virtuo {
-		background-image: url("../img/virtuo/virtuo-header.jpg");
+		background-image: url("https://dl.dropboxusercontent.com/s/4owkjm50pjz68tt/virtuo-hero-mobile.jpg");
+		height: 679px;
+		@media (min-width: $min-sm) {
+			background-image: url("https://dl.dropboxusercontent.com/s/7rm6ecr61b0yygc/virtuo-hero.jpg");
+			height: 865px;
+		}
 	}
 
 	&.leflair {
-		background-image: url("../img/leflair/leflair-header.jpg");
+		background-image: url("https://dl.dropboxusercontent.com/s/pisygly6jq2g2vw/lefair-hero.jpg");
 	}
 
 	&.timecloud {
-		background-image: url("../img/timecloud/timecloud-header.jpg");
+		background-image: url("https://dl.dropboxusercontent.com/s/o9xlew3c2g85wh3/timecloud-hero.jpg");
 	}
 
 	&.leflair,
@@ -137,10 +142,10 @@ img {
 	background-position: center bottom;
 	background-repeat: no-repeat;
 	background-size: 90vw auto;
+	margin-bottom: 0 !important;
 
 	@media (min-width: $min-sm) {
 		background-position: center bottom;
-		// background-image: url("../img/project-leflair.png");
 		background-size: 750px auto;
 	}
 }
